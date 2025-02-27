@@ -1,0 +1,35 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.cjs",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production tsup",
+    "dev": "cross-env NODE_ENV=development tsup",
+    "start": "node dist/index.cjs",
+    "typecheck": "tsc --noEmit",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.0.0",
+    "@fastify/sensible": "^6.0.3",
+    "dotenv": "^16.3.1",
+    "fastify": "^5.2.1",
+    "fs-extra": "^11.3.0",
+    "mi-gpt": "^4.2.0",
+    "shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "cross-env": "^7.0.3",
+    "tsup": "^8.0.2"
+  },
+  "volta": {
+    "node": "22.14.0",
+    "pnpm": "10.5.2"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "mi-ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "小爱音箱 GPT 控制应用",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build",
+    "start": "pnpm -r start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "packageManager": "pnpm@9.15.6",
+  "volta": {
+    "node": "22.14.0",
+    "pnpm": "9.15.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.7.3"
+  }
+}
