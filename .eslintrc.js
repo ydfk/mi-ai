@@ -17,6 +17,8 @@ module.exports = {
   rules: {
     '@typescript-eslint/no-explicit-any': 'warn',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-unused-vars': 'warn',
+    '@typescript-eslint/no-empty-object-type': 'warn',
     'no-console': ['warn', { allow: ['warn', 'error'] }],
   },
   ignorePatterns: ['dist', 'node_modules', '*.config.js'],

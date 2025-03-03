@@ -9,7 +9,8 @@
     "dev": "cross-env NODE_ENV=development tsup",
     "start": "node dist/index.cjs",
     "typecheck": "tsc --noEmit",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "lint": "tsc --noEmit"
   },
   "dependencies": {
     "@fastify/cors": "^11.0.0",
